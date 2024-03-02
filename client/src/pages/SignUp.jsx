@@ -42,7 +42,6 @@ const navigate = useNavigate();
     
         const data = await res.json();
     
-    
         if(data.success === false){
             SetLoading(false);
             SetError(data.message);
@@ -65,14 +64,13 @@ const navigate = useNavigate();
 
     console.log(formData);
 
-
-
-
     return (
         <>
 
             <div className='p-3 max-w-lg mx-auto'>
                 <h1 className='text-3xl text-center font-semibold my-7'>SignUp</h1>
+                
+
 
                 <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
                     <input type='text' placeholder='username'
@@ -104,3 +102,6 @@ const navigate = useNavigate();
 }
 
 export default SignUp
+
+
+
