@@ -50,7 +50,7 @@ const navigate = useNavigate();
         }
         SetLoading(false)
         SetError(null)
-        navigate('sign-in');
+        navigate('/sign-in');
         console.log(data)
     }
      catch(error) {
